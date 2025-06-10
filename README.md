@@ -11,36 +11,41 @@ Secure configuration management using ConfigMaps and Secrets
 
 ## Technologies Used
 
-Kubernetes - Container orchestration
-MongoDB - NoSQL database
-mongo-express - Web-based MongoDB admin interface
-Docker - Containerization
-YAML - Configuration files
+- Kubernetes - Container orchestration
+- MongoDB - NoSQL database
+- mongo-express - Web-based MongoDB admin interface
+- Docker - Containerization
+- YAML - Configuration files
 
 ## What I Learned 
 
-Through this project, I gained hands-on experience with:
-Creating and managing Kubernetes Deployments
-Setting up internal and external Services
-Using ConfigMaps for configuration data
-Managing sensitive data with Secrets
-Service discovery within Kubernetes clusters
-Basic Kubernetes networking concepts
+- Through this project, I gained hands-on experience with:
+- Creating and managing Kubernetes Deployments
+- Setting up internal and external Services
+- Using ConfigMaps for configuration data
+- Managing sensitive data with Secrets
+- Service discovery within Kubernetes clusters
+- Basic Kubernetes networking concepts
 
-Quick Start
+**Quick Start**
+
 bash# Apply all configurations
+
 kubectl apply -f .
 
-** Access mongo-express web interface **
+**Access mongo-express web interface**
+
 minikube service <service-name>
 
-Login credentials:
+**Login credentials:**
+
 Username: admin
 Password: pass
 
 
-Key Concepts Demonstrated
-Service Types: ClusterIP for internal communication, LoadBalancer for external access
-Configuration Management: Separating config from code using ConfigMaps and Secrets
-Security: Proper credential management with base64 encoded secrets
-Inter-service Communication: How services discover and communicate within the cluster
+## Key Concepts Demonstrated
+
+- **Service Types**: ClusterIP for internal communication, LoadBalancer for external access
+- **Configuration Management**: Separating config from code using ConfigMaps and Secrets
+- **Security**: Proper credential management with base64 encoded secrets
+- **Inter-service Communication**: How services discover and communicate within the cluster
